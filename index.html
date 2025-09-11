@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aqualife · Sistema de riego modular</title>
+<style>
+  :root{
+    --bg:#121417;
+    --fg:#eaeaea;
+    --cyan:#00beff;
+    --magenta:#e63cc8;
+    --purple:#a078ff;
+    --green:#6edc8c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5}
+  .container{max-width:1100px;margin:0 auto;padding:24px}
+  header{padding:24px 0;text-align:center;border-bottom:1px solid #2a2f36;margin-bottom:12px}
+  header h1{margin:0;font-size:42px;letter-spacing:.5px;background:linear-gradient(90deg,var(--cyan),var(--magenta),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+  header p{margin:8px 0 0 0;font-size:18px;opacity:.9}
+  .hero{margin:16px 0;border:1px solid #2a2f36;border-radius:16px;overflow:hidden}
+  .hero img{display:block;width:100%;height:auto}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:22px 0}
+  .card{background:#161a1f;border:1px solid #2a2f36;border-radius:14px;padding:16px}
+  .card h3{margin:0 0 8px 0;font-size:18px;color:var(--cyan)}
+  .card p{margin:0;font-size:15px;color:#d7d7d7}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;margin:26px 0}
+  .btn{padding:12px 18px;border-radius:12px;border:1px solid var(--magenta);color:#fff;text-decoration:none}
+  .btn:hover{background:rgba(230,60,200,.12)}
+  footer{border-top:1px solid #2a2f36;margin-top:24px;padding:16px 0;text-align:center;color:#b8b8b8;font-size:14px}
+  @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:600px){.grid{grid-template-columns:1fr}header h1{font-size:32px}}
+</style>
+</head>
+<body>
+  <header class="container">
+    <h1>Aqualife</h1>
+    <p>Sistema de riego modular, intuitivo y sostenible</p>
+  </header>
+  <main class="container">
+    <div class="hero">
+      <img src="aqualife_hero.png" alt="Aqualife · hero" />
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Montaje plug‑and‑play</h3>
+        <p>Ensamblado sin herramientas: piezas rectas, L y T con extremos y tapones. Diseñado para usuarios principiantes.</p>
+      </div>
+      <div class="card">
+        <h3>Colocación en terreno</h3>
+        <p>Líneas sobre el suelo con una separación orientativa: 40–60 cm para huertos domésticos.</p>
+      </div>
+      <div class="card">
+        <h3>Uso por microgravedad</h3>
+        <p>Depósito elevado 1.5-2 m conectado al filtro, y este conectado a la línea madre.</p>
+      </div>
+      <div class="card">
+        <h3>Opcionalidad tecnológica</h3>
+        <p>Sensor de humedad, válvula, regulador de presión y panel solar para automatizar el riego al completo.</p>
+      </div>
+      <div class="card">
+        <h3>Mantenimiento mínimo</h3>
+        <p>Limpieza periódica del filtro, sustitución de juntas si hay fugas y quitar tapones en invierno.</p>
+      </div>
+      <div class="card">
+        <h3>Materiales y sostenibilidad</h3>
+        <p>Selección de polímeros durables y reciclables. Sistema modular que reduce desperdicio y consumo de agua.</p>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a class="btn" href="#" title="Descargar manual (PDF)">Descargar manual (PDF)</a>
+    </div>
+  </main>
+  <footer>
+    <p>Aqualife · Diseño y desarrollo 2025 · Prototipo académico</p>
+  </footer>
+</body>
+</html>
